@@ -1,0 +1,57 @@
+// This defines all syntax variables that syntax themes must implement when they
+// include a syntax-variables.less file.
+
+// Theme colors.
+@boxy-black: rgb(77, 77, 76);
+@boxy-black-2: rgb(0, 0, 0);
+@boxy-blue: rgb(66, 113, 174);
+@boxy-cyan: rgb(62, 153, 159);
+@boxy-gray: rgb(142, 144, 140);
+@boxy-green: rgb(113, 140, 0);
+@boxy-orange: rgb(245, 135, 31);
+@boxy-pink: rgb(223, 91, 102);
+@boxy-purple: rgb(137, 89, 168);
+@boxy-red: rgb(200, 40, 41);
+@boxy-white: hsl(230, 1%, 98%);
+@boxy-yellow: rgb(201, 158, 0);
+// @boxy-white: rgb(255, 255, 255);
+
+// JSON Colors
+@default: @boxy-black;
+@level1-key: @boxy-purple;
+@level1-value: @boxy-green;
+@level2-key: @boxy-orange;
+@level2-value: @boxy-blue;
+@level3-key: @boxy-pink;
+@level3-value: @boxy-cyan;
+@level4-key: @boxy-blue;
+@level4-value: @boxy-yellow;
+
+// General colors
+@syntax-text-color: @boxy-black;
+@syntax-cursor-color: @boxy-purple;
+@syntax-selection-color: fadeout(@boxy-blue, 85%);
+@syntax-background-color: @boxy-white;
+@syntax-cursor-line: fadeout(@boxy-blue, 95%);
+
+// Guide colors
+@syntax-wrap-guide-color: rgba(142, 144, 140, 0.09);
+@syntax-indent-guide-color: rgba(142, 144, 140, 0.09);
+@syntax-invisible-character-color: rgba(142, 144, 140, 0.09);
+
+// For find and replace markers
+@syntax-result-marker-color: fadeout(@boxy-blue, 75%);
+@syntax-result-marker-color-selected: fadeout(@boxy-blue, 50%);
+
+// Gutter colors
+@syntax-gutter-text-color: @boxy-gray;
+@syntax-gutter-text-color-selected: @boxy-gray;
+@syntax-gutter-background-color: @boxy-white;
+@syntax-gutter-background-color-selected: @boxy-white;
+
+// For git diff info. i.e. in the gutter
+// These are static and were not extracted from your textmate theme
+@syntax-color-renamed: @boxy-purple;
+@syntax-color-added: @boxy-green;
+@syntax-color-modified: @boxy-orange;
+@syntax-color-removed: @boxy-pink;
