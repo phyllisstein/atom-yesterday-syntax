@@ -38,7 +38,7 @@
 .syntax--punctuation.syntax--separator.syntax--inheritance.syntax--php,
 .syntax--support.syntax--type.syntax--object.syntax--dom,
 .syntax--support.syntax--type.syntax--object.syntax--node,
-.syntax--support.syntax--variable.syntax--dom,
+.syntax--support.syntax--variable.syntax--dom:not(.syntax--property),
 .syntax--support.syntax--variable.syntax--node,
 .syntax--support.syntax--class.syntax--console {
   color: @boxy-cyan;
@@ -46,7 +46,7 @@
 
 .syntax--support.syntax--type.syntax--object.syntax--dom,
 .syntax--support.syntax--type.syntax--object.syntax--node,
-.syntax--support.syntax--variable.syntax--dom,
+.syntax--support.syntax--variable.syntax--dom:not(.syntax--property),
 .syntax--support.syntax--variable.syntax--node,
 .syntax--support.syntax--class.syntax--console {
   font-style: italic;
@@ -82,16 +82,6 @@
 .syntax--string.syntax--other.syntax--link,
 .syntax--support.syntax--other.syntax--variable {
   color: @boxy-pink;
-}
-
-.syntax--constant.syntax--character,
-.syntax--constant.syntax--language,
-.syntax--constant.syntax--numeric,
-.syntax--support.syntax--constant,
-.syntax--parameters > .syntax--variable,
-.syntax--parameters,
-.syntax--variable.syntax--parameter {
-  color: @boxy-orange;
 }
 
 .syntax--variable.syntax--object {
@@ -645,9 +635,7 @@
 .syntax--other.syntax--attribute-name,
 .syntax--storage.syntax--type,
 .syntax--support.syntax--type,
-.syntax--parameters > .syntax--variable,
-.syntax--parameters,
-.syntax--variable.syntax--parameter {
+.syntax--parameter {
   font-style: italic;
 }
 
@@ -712,4 +700,13 @@
 .syntax--attribute-name.syntax--class {
   color: @boxy-purple;
   font-style: normal;
+}
+
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--language,
+.syntax--constant.syntax--numeric,
+.syntax--support.syntax--constant,
+.syntax--parameter,
+.syntax--variable.syntax--parameter {
+  color: @boxy-orange;
 }
