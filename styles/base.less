@@ -531,11 +531,11 @@
 
 .syntax--markup.syntax--raw {
   color: fadeout(@boxy-black, 20%);
-  background-color: fadeout(@boxy-black, 97%);
+  background-color: fade(@boxy-black, 3%);
 }
 
 .syntax--linebreak.syntax--gfm {
-  background-color: fadeout(@boxy-black, 97%);
+  background-color: fade(@boxy-black, 3%);
 }
 
 .syntax--markup.syntax--heading {
@@ -597,7 +597,7 @@
 
 .syntax--support.syntax--quote {
   color: @boxy-white;
-  background-color: fadeout(@boxy-black, 91%);
+  background-color: fade(@boxy-black, 3%);
 }
 
 .syntax--markup.syntax--quote {
@@ -607,20 +607,20 @@
 
 .syntax--markup.syntax--code {
   > .syntax--support {
-    background-color: fadeout(@boxy-black, 97%);
-    color: fadeout(@boxy-black, 80%);
+    background-color: fade(@boxy-black, 3%);
+    color: fadeout(@boxy-black, 20%);
   }
 }
 
 .syntax--comment.syntax--hr {
   font-weight: bold;
   color: @boxy-gray;
-  background-color: fadeout(@boxy-black, 97%);
+  background-color: fade(@boxy-black, 3%);
 }
 
 .syntax--table {
-  color: rgba(77, 77, 76, 0.8);
-  background-color: fadeout(@boxy-black, 97%);
+  color: @boxy-gray;
+  background-color: fade(@boxy-black, 3%);
 
   > .syntax--border {
     color: fadeout(@boxy-black, 69%);
